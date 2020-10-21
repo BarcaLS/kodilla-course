@@ -6,9 +6,9 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "TASKLISTS")
 public class TaskList {
-    int id;
-    String listName;
-    String description;
+    private int id;
+    private String listName;
+    private String description;
 
     public TaskList() {
     }
