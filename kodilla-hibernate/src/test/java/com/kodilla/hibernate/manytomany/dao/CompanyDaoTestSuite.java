@@ -98,7 +98,7 @@ class CompanyDaoTestSuite {
         List<Employee> smiths = employeeDao.retrieveByName("Smith");
         List<Employee> clarcksons = employeeDao.retrieveByName("Clarckson");
         List<Employee> kovalskys = employeeDao.retrieveByName("Kovalsky");
-        //List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters("Sof");
+        List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters("Sof");
         //List<Company> dat = companyDao.retrieveNameWithFirstThreeCharacters("Dat");
         //List<Company> gre = companyDao.retrieveNameWithFirstThreeCharacters("Gre");
 
@@ -106,7 +106,7 @@ class CompanyDaoTestSuite {
         assertEquals(1, smiths.size());
         assertEquals(1, clarcksons.size());
         assertEquals(1, kovalskys.size());
-        //assertEquals(1, sof.size());
+        assertEquals(1, sof.size());
         //assertEquals(1, dat.size());
         //assertEquals(1, gre.size());
 
