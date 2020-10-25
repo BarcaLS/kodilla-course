@@ -2,7 +2,7 @@ package com.kodilla.hibernate.invoice.dao;
 
 import com.kodilla.hibernate.invoice.Item;
 import com.kodilla.hibernate.invoice.Product;
-import com.kodilla.hibernate.task.Invoice;
+import com.kodilla.hibernate.invoice.Invoice;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

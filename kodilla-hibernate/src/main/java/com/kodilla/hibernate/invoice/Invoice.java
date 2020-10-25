@@ -1,6 +1,5 @@
-package com.kodilla.hibernate.task;
+package com.kodilla.hibernate.invoice;
 
-import com.kodilla.hibernate.invoice.Item;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
