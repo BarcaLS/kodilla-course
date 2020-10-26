@@ -98,8 +98,7 @@ class CompanyDaoTestSuite {
         List<Employee> smiths = employeeDao.retrieveByName("Smith");
         List<Employee> clarcksons = employeeDao.retrieveByName("Clarckson");
         List<Employee> kovalskys = employeeDao.retrieveByName("Kovalsky");
-        List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters();
-        //List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters("Sof");
+        List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters("Sof");
         //List<Company> dat = companyDao.retrieveNameWithFirstThreeCharacters("Dat");
         //List<Company> gre = companyDao.retrieveNameWithFirstThreeCharacters("Gre");
 
