@@ -99,16 +99,16 @@ class CompanyDaoTestSuite {
         List<Employee> clarcksons = employeeDao.retrieveByName("Clarckson");
         List<Employee> kovalskys = employeeDao.retrieveByName("Kovalsky");
         List<Company> sof = companyDao.retrieveNameWithFirstThreeCharacters("Sof");
-        //List<Company> dat = companyDao.retrieveNameWithFirstThreeCharacters("Dat");
-        //List<Company> gre = companyDao.retrieveNameWithFirstThreeCharacters("Gre");
+        List<Company> dat = companyDao.retrieveNameWithFirstThreeCharacters("Dat");
+        List<Company> gre = companyDao.retrieveNameWithFirstThreeCharacters("Gre");
 
         //Then
         assertEquals(1, smiths.size());
         assertEquals(1, clarcksons.size());
         assertEquals(1, kovalskys.size());
         assertEquals(1, sof.size());
-        //assertEquals(1, dat.size());
-        //assertEquals(1, gre.size());
+        assertEquals(1, dat.size());
+        assertEquals(1, gre.size());
 
         try {
             employeeDao.deleteById(johnSmith.getId());

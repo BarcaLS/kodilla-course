@@ -7,7 +7,7 @@ import java.util.List;
 
 @NamedNativeQuery(
         name = "Company.retrieveNameWithFirstThreeCharacters",
-        query = "SELECT company_name FROM COMPANIES WHERE LEFT(company_name, 3)=':FIRSTTHREECHARACTERS'",
+        query = "SELECT * FROM COMPANIES WHERE LEFT(company_name, 3)=:FIRSTTHREECHARACTERS",
         resultClass = Company.class
 )
 @Entity
