@@ -10,6 +10,11 @@ import java.util.List;
         query = "SELECT * FROM COMPANIES WHERE LEFT(company_name, 3)=:FIRSTTHREECHARACTERS",
         resultClass = Company.class
 )
+@NamedNativeQuery(
+        name = "Company.retrieveNameByPartOfName",
+        query = "SELECT * FROM COMPANIES WHERE company_name LIKE :PARTOFNAME",
+        resultClass = Company.class
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
